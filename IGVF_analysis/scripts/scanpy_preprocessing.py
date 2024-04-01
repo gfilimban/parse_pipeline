@@ -1,6 +1,6 @@
 import scanpy as sc
 import pandas as pd
-import leidenalg as la 
+import leidenalg 
 import anndata as ad
 
 adata = sc.read_h5ad("/share/crsp/lab/seyedam/gfilimba/analysis/igvf/parse_pipeline/output/igvf_019/Gastrocnemius/Gastrocnemius.h5ad") # fill in path to adata
