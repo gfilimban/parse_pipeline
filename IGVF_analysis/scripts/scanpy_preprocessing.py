@@ -3,7 +3,7 @@ import pandas as pd
 import leidenalg
 import anndata as ad
 
-adata = sc.read_h5ad('/share/crsp/lab/seyedam/gfilimba/analysis/igvf/parse_pipeline/output/igvf_019/Gastrocnemius/Gastrocnemius.h5ad') # fill in path to adata
+adata = sc.read_h5ad("/share/crsp/lab/seyedam/gfilimba/analysis/igvf/parse_pipeline/output/igvf_019/Gastrocnemius/Gastrocnemius.h5ad") # fill in path to adata
 adata.layers['raw_counts'] = adata.X.copy()
 adata.var_names_make_unique()
 
@@ -55,4 +55,4 @@ adata.obsm = adatas.obsm
 adata.obsp = adatas.obsp
 
 
-adata.write_h5ad('/share/crsp/lab/seyedam/gfilimba/analysis/igvf/parse_pipeline/output/igvf_019/Gastrocnemius/Gastrocnemiusprocessed.h5ad') # fill in path to output adata
+adata.write_h5ad("/share/crsp/lab/seyedam/gfilimba/analysis/igvf/parse_pipeline/output/igvf_019/Gastrocnemius/Gastrocnemiusprocessed.h5ad") # fill in path to output adata
