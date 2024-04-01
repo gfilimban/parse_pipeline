@@ -15,10 +15,10 @@ def main():
     else:
         print("Please provide a file using -f option.")
 
-def process_file(file_path):
-    print("Processing file:", file_path)
+def process_file('/share/crsp/lab/seyedam/gfilimba/analysis/igvf/parse_pipeline/output/igvf_019/Gastrocnemius/Gastrocnemius.h5ad'):
+    print("Processing file:", '/share/crsp/lab/seyedam/gfilimba/analysis/igvf/parse_pipeline/output/igvf_019/Gastrocnemius/Gastrocnemius.h5ad')
 
-    adata = sc.read_h5ad('preprocessed_tissues/' + file_path)
+    adata = sc.read_h5ad('/share/crsp/lab/seyedam/gfilimba/analysis/igvf/parse_pipeline/output/igvf_019/Gastrocnemius/Gastrocnemius.h5ad')
     adata.layers['raw_counts'] = adata.X.copy()
     adata.var_names_make_unique()
 
@@ -77,10 +77,9 @@ def process_file(file_path):
 
 #    sc.tl.rank_genes_groups(adata, 'leiden', method='wilcoxon')
 
-    filename = file_path
-    filename2 = filename.replace("preprocessed.h5ad", "")
-
-    adata.write_h5ad(filename2 +'_processed.h5ad')
+    filename = '/share/crsp/lab/seyedam/gfilimba/analysis/igvf/parse_pipeline/output/igvf_019/Gastrocnemius/Gastrocnemius.h5ad'
+    
+    adata.write_h5ad(filename +'_processed.h5ad')
 
 if __name__ == "__main__":
     main()
