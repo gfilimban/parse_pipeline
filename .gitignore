@@ -14,3 +14,4 @@ klue/*
 .snakemake/*
 filter/*
 kallisto/*
+IGVF_analysis/.DS_Store
