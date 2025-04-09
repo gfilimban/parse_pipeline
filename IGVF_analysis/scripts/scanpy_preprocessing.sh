@@ -4,7 +4,7 @@
 #SBATCH --nodes=1 ## (-N) number of nodes to use
 #SBATCH -p highmem
 #SBATCH --cpus-per-task=16         ## number of cores the job needsi
-#SBATCH --output=R-%x.%j.out
+#SBATCH --output=R-%x.%j.out ## output destination filename (%x = job name, %j = job id)
 #SBATCH --error=R-%x.%j.err
 #SBATCH --mem=256G
 #SBATCH --array=1-9
