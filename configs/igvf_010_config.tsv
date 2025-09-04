@@ -1,3 +1,3 @@
 fastq	fastq_r2	subpool	sample	plate	lane	run	platform
-/dfs7/samlab/seyedam/IGVF/igvf_010/nextseq/010_67D__R1.fastq.gz	/dfs7/samlab/seyedam/IGVF/igvf_010/nextseq/010_67D__R2.fastq.gz	67D	S1	igvf_010	L001	1	next
-/dfs7/samlab/seyedam/IGVF/igvf_010/nextseq/010_67O__R1.fastq.gz	/dfs7/samlab/seyedam/IGVF/igvf_010/nextseq/010_67O__R2.fastq.gz	67O	S2	igvf_010	L001	1	next
+/dfs7/samlab/seyedam/IGVF/igvf_010/nextseq/010_67D_R1.fastq.gz	/dfs7/samlab/seyedam/IGVF/igvf_010/nextseq/010_67D_R2.fastq.gz	67D	S1	igvf_010	L001	1	next
+/dfs7/samlab/seyedam/IGVF/igvf_010/nextseq/010_67O_R1.fastq.gz	/dfs7/samlab/seyedam/IGVF/igvf_010/nextseq/010_67O_R2.fastq.gz	67O	S2	igvf_010	L001	1	next
